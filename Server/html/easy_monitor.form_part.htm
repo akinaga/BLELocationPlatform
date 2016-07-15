@@ -1,0 +1,64 @@
+<p>
+<button id="toggle-type" style="WIDTH: 100px">Linear/Log</button>
+<button id="data-labels" style="WIDTH: 150px">Toggle data labels</button>
+<button id="markers" style="WIDTH: 150px">Toggle point markers</button>
+<button id="color" style="WIDTH: 100px">Toggle color</button>
+
+<button id="line" style="margin-left: 2em; WIDTH: 100px">Line</button>
+<button id="column" style="WIDTH: 100px">Column</button>
+<button id="spline" style="WIDTH: 100px">Spline</button>
+<button id="area" style="WIDTH: 100px">Area</button>
+<button id="areaspline" style="WIDTH: 100px">Areaspline</button>
+<button id="scatter" style="WIDTH: 100px">Scatter</button>
+</p>
+<form name="form1" method="get" action="easy_monitor_view.py">
+<p><input type="submit" value="Draw" style="WIDTH: 200px; HEIGHT: 40px"> <input type="button" value="Download" style="WIDTH: 100px; HEIGHT: 40px" onclick="download1.submit();"></p>
+<table cellpadding=5>
+<tr>
+	<td valign=top align=center width=150px>
+	<p>Target Server<br>
+	<select name="target" size="8" multiple>
+	**target**
+	</select></p>
+	</td>
+
+	<td valign=top align=center width=150px>
+	<p>Metric<br>
+	<select name="metric" size="5">
+	**metric**
+	</select></p>
+	</td>
+
+	<td valign=top align=center width=150px>
+	<p>Time Range<br>
+	<select name="span" size="5">
+	**span**
+	</select></p>
+	</td>
+
+	<td valign=top align=center width=150px>
+	<p>Summary Func.<br>
+	<select name="func" size="5">
+	**func**
+	</select></p>
+	</td>
+
+    <td valign=top align=center width=150px>
+	<p>Data Granularity<br>
+	<select name="gran" size="5">
+	**gran**
+	</select></p>
+	</td>
+
+	<td valign=top align=center width=150px>
+	日付指定<br>
+	<p align=right>From:<input type="text" id="datepick" name="from_date" value="**from_date_field**" size="10"><br>
+	To:<input type="text" name="to_date" value="**to_date_field**" size="10"><br>(YYYYMMDD)</p>
+	</td>
+
+</tr>
+<tr><td colspan=6><br></td></tr>
+</table>
+<p align=center><input type="submit" value="Draw" style="WIDTH: 200px; HEIGHT: 40px"> <input type="button" value="Download" style="WIDTH: 100px; HEIGHT: 40px" onclick="download1.submit();"></p>
+</form>
+<p align=center><button onClick="location.href='index.htm'">Back to top</button></p>
